@@ -1,5 +1,6 @@
 package id.ndcreative.temansaya
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -18,5 +19,8 @@ data class Teman (
     val jenisKelamin : String,
     val email : String,
     val telp : String,
-    val alamat : String
+    val alamat : String,
+
+    @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
+    var image: ByteArray? = null
 )
