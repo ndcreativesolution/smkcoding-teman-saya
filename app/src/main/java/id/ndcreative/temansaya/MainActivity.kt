@@ -30,4 +30,9 @@ class MainActivity : AppCompatActivity() {
         gantiFragment(supportFragmentManager, TambahTemanFragment.newInstance(),
             R.id.contentFrame)
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        AppDatabase.destroyDatabase()
+    }
 }

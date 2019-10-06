@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.my_friends_item.*
  * id.ndcreativesolution@gmail.com
  */
 
-class TemanAdapter(private val context: Context, private val items: ArrayList<Teman>) :
+class TemanAdapter(private val context: Context, private val items: List<Teman>) :
     RecyclerView.Adapter<TemanAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(

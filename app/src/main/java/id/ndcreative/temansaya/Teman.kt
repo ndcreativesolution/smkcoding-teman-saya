@@ -1,5 +1,8 @@
 package id.ndcreative.temansaya
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
 
 /**
  * Created by Umar Fadil on 05,Oct,2019
@@ -7,7 +10,10 @@ package id.ndcreative.temansaya
  * id.ndcreativesolution@gmail.com
  */
 
+@Entity
 data class Teman (
+    @PrimaryKey(autoGenerate = true)
+    val temanId : Int? = null,
     val nama : String,
     val jenisKelamin : String,
     val email : String,
